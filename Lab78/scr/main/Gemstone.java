@@ -1,4 +1,5 @@
-class Gemstone {
+package scr.main;
+public class Gemstone {
     private String name;
     private double weight;
     private double pricePerCarat;
@@ -54,14 +55,14 @@ class Gemstone {
             "\nTransparency: " + transparency;
     }
 
-    @Override public boolean equals(Object object) {
+    /*@Override public boolean equals(Object object) {
         if (!(object instanceof Gemstone)) {
             return false;
         }
         
-        return ((Gemstone)object).getName() != this.name ||
-                ((Gemstone)object).getWeight() != this.weight ||
-                ((Gemstone)object).getPricePerCarat() != this.pricePerCarat ||
-                ((Gemstone)object).getTransparency() != this.transparency;
-    }
+        return ((Gemstone)object).getName() == this.name ||
+                ((Gemstone)object).getWeight() == this.weight ||
+                ((Gemstone)object).getPricePerCarat() == this.pricePerCarat ||
+                ((Gemstone)object).getTransparency() == this.transparency;
+    }*/
 }
